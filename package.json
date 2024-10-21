@@ -1,0 +1,40 @@
+{
+  "name": "teste-lumi-devfullstack-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "build": "tsc",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "test": "cross-env NODE_ENV=test SECRET_KEY=secret_key jest --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/uuid": "^10.0.0",
+    "class-transformer": "^0.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express-async-errors": "^3.1.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^5.0.0",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/pg": "^8.11.10",
+    "@types/typescript": "^2.0.0",
+    "express": "^4.21.1",
+    "pg": "^8.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
