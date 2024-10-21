@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const bills_controller_1 = require("../controllers/bill/bills.controller");
+const billsRouter = (0, express_1.Router)();
+billsRouter.post("/", bills_controller_1.createBillController);
+billsRouter.get("/", bills_controller_1.listBillsController);
+billsRouter.get("/extract", bills_controller_1.extractAndCreateBillsController);
+billsRouter.get("/download/:id", bills_controller_1.downloadBillPDFController);
+billsRouter.get("/financial", bills_controller_1.getMonthlyFinancialResults);
+exports.default = billsRouter;
